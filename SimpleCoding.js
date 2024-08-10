@@ -1,4 +1,4 @@
-
+/* 
 console.log('=========reverseString==========')
 function reverseString(str) {
     return str.split('').reverse().join('');
@@ -57,11 +57,38 @@ function removeDuplicates(str) {
     }
     console.log("removeDuplicates = ",removeDuplicates("aabbcc")); // Output: "abc"
 
-
+console.log("=============arrat comparison========")
 console.log([]=="");
 console.log([]==[]);
 
+console.log(5==5); 
+console.log([5]==[5]);
+
 const string = "NKtesting"
 console.log("length =", string.length); // Output: 8
-console.log("slice =", string.slice(-1, -3))
-console.log("slipt =", string.split(""))
+console.log("slice =", string.slice(1, 3))
+console.log("slipt =", string.split("t"))
+
+console.log("=============trim test========")
+
+const trimtest = "           NK                   Testing           "
+console.log("trim =", trimtest.trim())
+ */
+
+// User input ni prompt tho tisukoni, console lo table ni display chestundi
+// User input kosam prompt function use chesam
+
+/* const prompt = require('prompt-sync')();
+let a = prompt("Enter a number between 1 and 20:");
+
+// Input value ni integer ga convert chestam
+let number = parseInt(a);
+
+// Input valid unda ledha ani check chestam
+for(i=1; i<=20; i++){
+    console.log(i, "*", a, "=", i*a);
+}
+ */
+
+let myString = "Hello, World!";
+console.log(myString.length()); 
