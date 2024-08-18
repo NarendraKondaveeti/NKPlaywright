@@ -91,4 +91,20 @@ for(i=1; i<=20; i++){
  */
 
 let myString = "Hello, World!";
-console.log(myString.length()); 
+console.log(myString.length); 
+
+var str = "Hello"; 
+str[0] = "J"; 
+console.log(str); 
+
+console.log(0.1 + 0.2 === 0.3); 
+
+var result = 10 / "2"; console.log(result); 
+
+// var number = 5; number = number + "5"; document.write(number);
+
+var arr = [1, 2, 3]; arr.length = 5; console.log(arr); 
+
+var a = null; var b; 
+console.log("a == b =", a == b); 
+console.log("a === b =",a === b); 

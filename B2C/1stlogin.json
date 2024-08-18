@@ -1,0 +1,401 @@
+{
+  "cookies": [
+    {
+      "name": "browserId",
+      "value": "12d021a5-67b9-4a94-88aa-f1b2f4736b96",
+      "domain": ".portal.azure.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "esctx-Op0Ykc7OkI",
+      "value": "AQABCQEAAAApTwJmzXqdR4BN2miheQMYAfl0dCnzMjIoCLUNU9CE9vVcEqM6uDPheoJVsFC2iGoZAvAkHlT8fWCqtrlzbAQaz88aYNXlCLgAMAsH_e8wsKM8sjorjBkyawG3hQ09-X9FlkpGGOak3bd65im325cahTFxyGcAt__vGVIdwFffyiAA",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "x-ms-gateway-slice",
+      "value": "estsfd",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "stsservicecookie",
+      "value": "estsfd",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AADSSO",
+      "value": "NA|NoExtension",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SSOCOOKIEPULLED",
+      "value": "1",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": 1723887238,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "esctx-NIJg6fgnmRQ",
+      "value": "AQABCQEAAAApTwJmzXqdR4BN2miheQMYkgVSfYdkaTIalwT_MGhQI81diS4SqfICqoJfj8LYaamH3G33qHJ3xLpxxFctGefXCdBeWsxMgSj0VQKiWAYWJ4XbnLpN4bkumwqQ0ob3Jh17KPmZCWfHZzirNPQSx12ScQdr10DJ03TENN6uIQdvuiAA",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MicrosoftApplicationsTelemetryDeviceId",
+      "value": "f1ff9a5b-0c89-4f5b-846e-43aa1c4e15d8",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": 1755423179.469147,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "brcap",
+      "value": "0",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": 1757583179,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ai_session",
+      "value": "LuAi1wbclwMZgH9pgANYor|1723887180650|1723887180650",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": 1723888980,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "wlidperf",
+      "value": "FR=L&ST=1723887181130",
+      "domain": ".microsoftonline.com",
+      "path": "/",
+      "expires": 1757583181,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ESTSAUTHLIGHT",
+      "value": "+8b438d2e-90ca-48ad-8657-1fdae19142f3",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "esctx",
+      "value": "PAQABBwEAAAApTwJmzXqdR4BN2miheQMYMbGvMpqTIQUSmfICdeSwp2kOdyjM0LgsF6G9dKQFme2JZV2gIO-4jp6SDMK5UnjSyES3R6uh2YN7UQvtSc3VALOa01CQJuIw4Bw3nfmwYEqfxFp281DlQN0Dd_eh3ge21Hz6WHGOYqT_w_8A_C9StTELhDytOHlSLeR4NhDTtU8gAA",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "esctx-zuP07BgGWfY",
+      "value": "AQABCQEAAAApTwJmzXqdR4BN2miheQMYTfkxzxobobgBqkJwqb27gNr8WF2BhyclZkMlXBSDnqG2dJuyUdKYFO8AHPOsjDTnGLUdNAadKhPoxitelPUco2ZMhdqwb-NHC03fV-sP39xZJD1qC_o4MANrq82hZ6TChBll1f-tlZ2cultMG_MlBSAA",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uaid",
+      "value": "4bed233bab14452c83bd31b65b68fd3e",
+      "domain": ".login.live.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MSPRequ",
+      "value": "id=N&lt=1723887182&co=2",
+      "domain": ".login.live.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ESTSAUTHPERSISTENT",
+      "value": "0.AacA4fEkKolvLECZeGKUeYhFroNAS8SwO8FJtH2XTlPL3zweAVc.AgABFwQAAAApTwJmzXqdR4BN2miheQMYAgDs_wUA9P_kie-HTLDNGNEFjDYQbeG-7Fet5RCSeSqTFgDzPrsCQjzDxDtBY8nmOiAlp4gww0y3VzC3djekZTxTHzhj4y42WReWUhc7pxf2nDMpbns4SZlatD6xv3QvQ2AEAhKd4ymsj1a3UgygWh1bNmbzxFQM4-9Qd2St5BhlzTifl7ADKdJDOOu7Anwd5la6yJoWjJpnEujoIKvUGiPb6r336zZEk_yY9_wPUKhzPaw1jvVjiiLNsCKczckv4PdCkWoy65VLYUhEe7vvEr2oMP_E0UC2B6BcZDnfyviuLDCYGRpYAXchhrtU3bGJb--ayQTE5MJ78AT0LyzPKYkN6ebCcGsXfLBWvrkcmc4c0ZlWQHdvIZYSja9uvIdaS_KL7lkLGWrOhH9X5K0tTNcs9U06LBAI0g4qFsdjWLmQicd7ERX_IVnkOrhMIvxQStNs5DwzqQGh872ZZauq7Kd6NyuqmSML6WhYG-9o_MjBWq3Vd1Qg77s0_snvtdJl7f_tIKWw_DQZ0RXoxB9IdLVgO9z9ugUL2mZ54LywCry-jgL3NGO_vafYmRVaqITEAiRtqCllej5ln85WU-dfyXoEYj0ljw",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": 1731663183.209389,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ESTSAUTH",
+      "value": "0.AacA4fEkKolvLECZeGKUeYhFroNAS8SwO8FJtH2XTlPL3zweAVc.AgABFwQAAAApTwJmzXqdR4BN2miheQMYAgDs_wUA9P8ylR4Ua3OKhmA33rSQ05ZCsiacKmSbotYEHOofFSha668rjQjFIAAJqmnLW8dFSvH2rsYXwpQW1w",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "buid",
+      "value": "0.AacA4fEkKolvLECZeGKUeYhFroNAS8SwO8FJtH2XTlPL3zweAVc.AQABGgEAAAApTwJmzXqdR4BN2miheQMYvmjwS9kdI-9Fmc4bNjAwt_CFhW9Ds9iCzJpbhLl-qSDafw1HJWnKFpaqMXXjFTrN9P7Tiu7WdLTGLUQNV6jYiejH-QS5aLEh-fZLxcZiPs04MqfABrXgwnYStQNYxC9o9A9UuG6WyIgToTXkOzPZntH5kRqTpxQEM3G9phYOVrggAA",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": 1726479183.209981,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CCState",
+      "value": "RWhJS0VJN2p4UVFic1N4Tm9iNUxMUUdwaEpZPQ==",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": 1724751183.21012,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SignInStateCookie",
+      "value": "CAgABFgIAAAApTwJmzXqdR4BN2miheQMYAgDs_wUA9P_I2TVA3Q9Uy4GwBcjD3anE_In8oIYMTqiwGOy2nf27wCK81-kynCqDBrQxE13A75F29dHsVVRHElnc9-t8B45Oe9rj4d6p8fNVtkFPtAYr6mDVjF-3ByHf0Gihl3lmBm_Fk9PWeQHO3q-6alZ3e45wQAxzalCzcGba7lAWD7udtSxXPjTz2N9OIh3zMl5Ba4EEv_RXHlrvzXI5QFTbWBUIt3qxbLpX7-S0DVsWlPvaGcRc6HGug1Csd30AtNLnH_wNtAfSfg",
+      "domain": ".login.microsoftonline.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "fpc",
+      "value": "AgqpsWs-eaJIjJxYFRfDSIg9igOXAQAAAEllUt4OAAAA5v4oVAEAAABNZVLeDgAAAPDgYyoBAAAATmVS3g4AAAA",
+      "domain": "login.microsoftonline.com",
+      "path": "/",
+      "expires": 1726479183.210339,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MC1",
+      "value": "GUID=a87efc616d5a4e7c93ab8f3e171e79a7&HASH=a87e&LV=202408&V=4&LU=1723887183034",
+      "domain": ".microsoft.com",
+      "path": "/",
+      "expires": 1755423184.23639,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MS0",
+      "value": "6f636e3c4b904f9db747940db87db798",
+      "domain": ".microsoft.com",
+      "path": "/",
+      "expires": 1723888984.236607,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "portalId",
+      "value": "12d021a5-67b9-4a94-88aa-f1b2f4736b96",
+      "domain": ".portal.azure.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MicrosoftApplicationsTelemetryDeviceId",
+      "value": "eb11abbb-08c7-4b17-b0c9-6e15e9be6a34",
+      "domain": "portal.azure.com",
+      "path": "/",
+      "expires": 1755423193.628552,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "1opomm5%7C2%7Cfoe%7C0%7C1690",
+      "domain": ".azure.com",
+      "path": "/",
+      "expires": 1755423190,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "0117fa630a1f4358a453ad1bd9e62b58.20240817.20250817",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1755423190.323662,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clsk",
+      "value": "17cyv0i%7C1723887190991%7C1%7C0%7Cp.clarity.ms%2Fcollect",
+      "domain": ".azure.com",
+      "path": "/",
+      "expires": 1723973590,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1724491991.943399,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "2B7DE4FBB0B5695C1DC0F025B15D68DC",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1757583191.943268,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "2B7DE4FBB0B5695C1DC0F025B15D68DC",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1757583191.943453,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1724491993.080064,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ANONCHK",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1723887793.080123,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "2B7DE4FBB0B5695C1DC0F025B15D68DC",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1757583193.07998,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MSFPC",
+      "value": "GUID=a87efc616d5a4e7c93ab8f3e171e79a7&HASH=a87e&LV=202408&V=4&LU=1723887183034",
+      "domain": "portal.azure.com",
+      "path": "/",
+      "expires": 1755423197.597545,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://portal.azure.com",
+      "localStorage": [
+        {
+          "name": "Telemetry_loadedPageVersion",
+          "value": "14.85.11.114.85.0.197258.240810-0220"
+        },
+        {
+          "name": "Redirect_LocaleQuery",
+          "value": "{\"l\":\"en.en-us\"}"
+        },
+        {
+          "name": "SavedDefaultDirectory",
+          "value": "2a24f1e1-6f89-402c-9978-6294798845ae"
+        },
+        {
+          "name": "bundlingKind12",
+          "value": "DefaultPartitioner"
+        },
+        {
+          "name": "Redirect_LastUsedLocale",
+          "value": "en.en-us"
+        }
+      ]
+    }
+  ]
+}

@@ -38,8 +38,9 @@ test("Calendar validations",async({page})=>
     ade monthNumber = "May" ani isthe appudu await page.getByText(monthNumber).click(); ane line set avuthundi
 
     */
-   
-    // await page.locator(".react-calendar__year-view__months__month").nth(Number(monthNumber)-1).click();
+    await page.locator(".react-calendar__year-view__months__month").nth(Number(monthNumber)-1).click();
+
+    /* ikkada date nee find cheyataniki XPath nee use chesam */
     await page.locator("//abbr[text()='"+date+"']").click();
  
-})
+});

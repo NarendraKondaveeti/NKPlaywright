@@ -3,8 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Test Cases Name',  async ({browser})=> {// here browser is fixture and that extract from @playwright/test module the test can understand the browser fixture without import
     // const context = await browser.newContext(); 
     const context = await browser.newContext({
-        viewport: { width: 180, height: 720 },
-        userAgent: 'MyUserAgent'
+        viewport: { width: 1200, height: 720 }
       });
     // Create a new isolated context, here context is API object in playwright that provide isolated environments (it means every time it provide new setup/environments )
         const page = await context.newPage(); 

@@ -5,7 +5,11 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.45.3",
-    "@types/node": "^22.0.0"
+    "@types/node": "^22.0.0",
+    "@zerostep/playwright": "^0.1.5"
   },
-  "scripts": {}
+  "scripts": {
+    "test:twocase": "npx playwright test tests/twocasesinonefile.test.js",
+    "test:assertion": "npx playwright test tests/assertion_with_index_length_getAttribute.test.js"
+  }
 }

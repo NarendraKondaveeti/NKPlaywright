@@ -4,7 +4,7 @@ import { title } from 'process';
 test('Test Case 1',  async function({page}) {
     await page.goto('https://playwright.dev/');
     const title = await page.title(); // Title get
-    console.log(await title)
+    console.log(title)
 });
 
 
