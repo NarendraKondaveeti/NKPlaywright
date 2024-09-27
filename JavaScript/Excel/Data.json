@@ -1,0 +1,51 @@
+[
+    {
+        "S No": 1,
+        "Languages": "JavaScript",
+        "Tools": "VS Code",
+        "Duration": 2
+    },
+    {
+        "S No": 2,
+        "Languages": "C#",
+        "Tools": "Visual Studio",
+        "Duration": 4
+    },
+    {
+        "S No": 3,
+        "Languages": "Python",
+        "Tools": "Pycharm",
+        "Duration": 4
+    },
+    {
+        "S No": 4,
+        "Languages": "Java",
+        "Tools": "Eclipse",
+        "Duration": 5
+    },
+    {
+        "S No": 5,
+        "Languages": "TypeScript",
+        "Tools": "VSCode",
+        "Duration": 3
+    },
+
+    {
+        "S No": 16,
+        "Languages": "TS1",
+        "Tools": "VSCode2",
+        "Duration": 6 
+    },
+    {
+        "S No": 18,
+        "Languages": "TSV3",
+        "Tools": "NKVSCode3",
+        "Duration": 7 
+    },
+    {
+        "S No": 180,
+        "Languages": "TSV36",
+        "Tools": "NKVSCode36",
+        "Duration": 7 
+    }
+]
