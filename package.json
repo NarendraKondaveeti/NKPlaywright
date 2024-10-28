@@ -4,7 +4,7 @@
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.45.3",
+    "@playwright/test": "^1.48.2",
     "@types/node": "^22.0.0",
     "@zerostep/playwright": "^0.1.5"
   },
