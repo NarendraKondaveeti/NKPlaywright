@@ -1,0 +1,5 @@
+Test case Execution command 
+first terminal a project folder lo vundali (Example:- D:\NKPlaywright>)
+Tarvata npx playwright test ane command ichi dani tarvata test case yekka file name ivali(Example:- 1sttestrun.test)
+Ex:-
+D:\NKPlaywright> npx playwright test 1sttestrun.test
