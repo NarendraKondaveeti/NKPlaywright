@@ -2,7 +2,7 @@
 // const { test, expect } = require('@playwright/test') == older version
 import { test, expect } from '@playwright/test'; // ikkada @playwright/test anedi okka module a module nundi test, expect ane e in-built functions nee import chesukuntunam
 // kavali ane e function ki manam alias name ichukovochu like for example “test as testcase” ante ikkada test ane word nee mana testcase ane alias name ichinatlu 
-test('Test Cases Name',  async function({page}) {
+test('@test Test Cases Name',  async function({page}) {
     await page.goto('https://playwright.dev/');
 });
 /*

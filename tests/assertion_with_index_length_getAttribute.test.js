@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
  
-test("Calendar validations",async({page})=>
+test("@test @test2 Calendar validations",async({page})=>
 {
     const monthNumber = "6";
     const date = "15";

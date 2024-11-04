@@ -4,7 +4,7 @@ test('Test Case 1',  async function({page}) {
 });
 
 
-test.only('Test Case 2',  async function({page}) {
+test('Test Case 2',  async function({page}) {
     //adena okka cases ne execute cheyali ante a test cases deggara test taravata .only any mention chesi run chesthe a cases okkate execute avuthundi
     await page.goto('https://google.com');
 });

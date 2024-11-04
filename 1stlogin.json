@@ -6,7 +6,7 @@
       "localStorage": [
         {
           "name": "token",
-          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTczMDE0Mjg2NCwiZXhwIjoxNzYxNzAwNDY0fQ.cq176BYblNRRNzyQdh9D_cl0bB-RKDDqRfmP-mHXJzw"
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTczMDY0MzM4NSwiZXhwIjoxNzYyMjAwOTg1fQ.fmlntwakyZqRcAWEROuZZfkBee9eN_b_J1gCmKSdQuQ"
         }
       ]
     }

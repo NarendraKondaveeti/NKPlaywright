@@ -17,7 +17,7 @@ test.beforeAll(async ({browser})=>{
 
 });
 
-test("1st Case", async({})=>{ 
+test("@test 1st Case", async({})=>{ 
     const productName = 'zara coat 3';
     const page = await webContext.newPage();
    await page.goto("https://rahulshettyacademy.com/client");

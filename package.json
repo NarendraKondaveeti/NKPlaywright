@@ -6,10 +6,15 @@
   "devDependencies": {
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.0.0",
-    "@zerostep/playwright": "^0.1.5"
+    "@zerostep/playwright": "^0.1.5",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.6"
   },
   "scripts": {
     "test:twocase": "npx playwright test tests/twocasesinonefile.test.js",
-    "test:assertion": "npx playwright test tests/assertion_with_index_length_getAttribute.test.js"
+    "test:assertion": "npx playwright test tests/assertion_with_index_length_getAttribute.test.js",
+    "test:Alltest":"npx playwright test",
+    "tst:testtag": "npx playwright test --grep '@test'",
+    "test:test2tag": "npx playwright test --grep '@test2'"
   }
 }

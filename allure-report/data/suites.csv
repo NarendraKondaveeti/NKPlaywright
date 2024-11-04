@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13916","@test @test2 Calendar validations","chromium","Sun Nov 03 19:46:17 IST 2024","failed","Sun Nov 03 19:46:31 IST 2024","","assertion_with_index_length_getAttribute.test.js","",""
+"","4164","@test @test2 Calendar validations","chromium","Sun Nov 03 19:46:17 IST 2024","passed","Sun Nov 03 19:46:21 IST 2024","","Calendar_Date_pick_with_CSS_getByText_nth_value.test.js","",""
+"","6469","@test2 Test Cases Name","chromium","Sun Nov 03 19:46:17 IST 2024","passed","Sun Nov 03 19:46:23 IST 2024","","browserSize_defaultContext.test.js","",""
+"","1832","@test 1st Case","chromium","Sun Nov 03 19:46:17 IST 2024","passed","Sun Nov 03 19:46:19 IST 2024","","1st_One_Time_login.test.js","",""
+"","3840","@test Test Cases Name","chromium","Sun Nov 03 19:46:17 IST 2024","passed","Sun Nov 03 19:46:21 IST 2024","","1sttestrun.test.js","",""
+"","6678","@test Locators Test","chromium","Sun Nov 03 19:46:17 IST 2024","passed","Sun Nov 03 19:46:23 IST 2024","","assertion_for_check_radio_button_utils.test.js","",""

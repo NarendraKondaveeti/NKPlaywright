@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { login } from '../utils/login';
 
-test('Locators Test', async ({ page }) =>{ 
+test('@test Locators Test', async ({ page }) =>{ 
     const dropdown = page.locator("select.form-control")
     const pickvalue = page.locator('.radiotextsty'); 
     const pop_ok = page.locator('#okayBtn'); 

@@ -19,10 +19,10 @@ test('Locators Test', async ({ page }) =>{
 });
 
 /* 
-Code Line: page.route('**/*.{jpg,png,jpeg}', route => route.abort());
+Code Line: page.route('**//*.{jpg,png,jpeg}', route => route.abort()); ikkadaa // kadu only one / matrame ivali but / ivatam valla pakkane * vundatam valla comment close ainnatu playwright consider chesukoni errors through chesthundi adukane // petta actually ikkada only / ivali
 Type: Playwright Statement
 Purpose:
-URL Matching: page.route() method ni use chesi, miru **/*.{jpg,png,jpeg} ani URL pattern ni match cheyyachu. Idi ante, URL lo jpg, png, jpeg file extensions unna prathi request ni match chestundi.
+URL Matching: page.route() method ni use chesi, miru **//*.{jpg,png,jpeg} ani URL pattern ni match cheyyachu. Idi ante, URL lo jpg, png, jpeg file extensions unna prathi request ni match chestundi.
 Abort: route.abort() ani valla, vaati requests ni block (abort) chesthundi, so avanni browser lo load avavu.
 Usage:
 Example: E method vaadadam valla unnecessary images ni load avakunda appadam jarugutundi, which might speed up the page loading.
