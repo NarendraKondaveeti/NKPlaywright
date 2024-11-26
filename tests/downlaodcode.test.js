@@ -20,7 +20,7 @@ test('@Client App login', async ({ page }) => {
          break;
       }
    }
- 
+   
    await page.locator("[routerlink*='cart']").click();
    //await page.pause();
  
