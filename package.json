@@ -4,11 +4,12 @@
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.2",
+    "@playwright/test": "^1.49.1",
     "@types/node": "^22.0.0",
     "@zerostep/playwright": "^0.1.5",
     "allure-commandline": "^2.32.0",
     "allure-playwright": "^3.0.6",
+    "cucumber": "^6.0.7",
     "typescript": "^5.6.3"
   },
   "scripts": {
@@ -17,5 +18,15 @@
     "Alltest": "npx playwright test",
     "test2tag": "npx playwright test --grep @test2",
     "testtag": "npx playwright test --grep @test"
-  }
+  },
+  "name": "nkplaywright",
+  "version": "1.0.0",
+  "main": "javascript.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
