@@ -1,0 +1,104 @@
+Test case Execution command 
+first terminal a project folder lo vundali (Example:- D:\NKPlaywright>)
+Tarvata npx playwright test ane command ichi dani tarvata test case yekka file name ivali(Example:- 1sttestrun.test)
+Ex:-
+D:\NKPlaywright> npx playwright test 1sttestrun.test
+
+Playwright commands
+1. Install Playwright
+npm init playwright@latest
+# Initializes a new Playwright project with configuration and installs dependencies.
+
+npm install @playwright/test
+# Installs the Playwright Test library.
+
+npx playwright install
+# Installs the required browsers for Playwright (Chromium, Firefox, WebKit).
+
+2. Run Playwright Tests
+
+npx playwright test
+# Runs all Playwright tests in the project.
+
+npx playwright test path/to/test-file.spec.js
+# Runs tests in a specific file.
+
+npx playwright test -g "test description"
+# Runs a specific test matching the description.
+
+3. Run with Tags
+npx playwright test --grep @tagName
+# Runs tests with a specific tag (e.g., @smoke, @regression).
+
+npx playwright test --grep-invert @tagName
+# Excludes tests with a specific tag.
+
+4. Generate Allure Reports
+npm install -D @playwright/test allure-playwright
+# Installs Allure reporting dependencies.
+
+# In playwright.config.ts:
+# Add the following configuration to enable allure reporting:
+# reporter: [['list'], ['allure-playwright']]
+
+npx playwright test
+# Runs tests and generates allure report files.
+
+npx allure serve
+# Serves the allure report in a web interface.
+
+5. Run Commands Configured in package.json
+# Add these scripts to your package.json file:
+"scripts": {
+  "test": "npx playwright test",
+  "test:smoke": "npx playwright test --grep @smoke",
+  "report": "npx allure serve"
+}
+Run the commands using npm
+npm run test
+# Runs all tests (defined in package.json).
+
+npm run test:smoke
+# Runs tests tagged with @smoke.
+
+npm run report
+# Opens the allure report (if previously generated).
+
+6. Run in Specific Browsers
+npx playwright test --project=chromium
+# Runs tests only in the Chromium browser.
+
+npx playwright test --project=firefox
+# Runs tests only in the Firefox browser.
+
+npx playwright test --project=webkit
+# Runs tests only in the WebKit browser.
+
+7. Debugging
+npx playwright test --debug
+# Opens the Playwright inspector for debugging.
+
+npx playwright show-trace trace.zip
+# Opens a trace file to debug a previous test execution.
+
+8. Parallel Test Execution
+npx playwright test --workers=3
+# Runs tests in parallel using 3 workers.
+
+9. Watch Mode
+npx playwright test --watch
+# Re-runs tests automatically when changes are detected.
+
+10. Browser-Specific Commands
+npx playwright codegen
+# Opens the Playwright code generator to record and create tests.
+
+npx playwright install-deps
+# Installs system dependencies required for browsers (useful in Linux environments).
+
+11. Create and Update Baseline Screenshots
+npx playwright test --update-snapshots
+# Updates baseline screenshots used in visual testing.
+
+npx playwright test --trace=on
+# Captures traces for all tests (useful for debugging failures).
