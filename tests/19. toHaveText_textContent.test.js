@@ -44,11 +44,12 @@ test('@Web Client App login', async ({ page }) => {
          break;
       }
    }
- /* ikkada .user__name [type='text'] locator lo same element mutiple time vunte first() method first value manam expect chesthuna value nena kadaa ni check chesthunam with toHaveText */
+ /* ikkada .user__name [type='text'] locator lo same element mutiple time vunte
+  first() method first value manam expect chesthuna value nena kadaa ni 
+  check chesthunam with toHaveText */
    expect(page.locator(".user__name [type='text']").first()).toHaveText(email);
    await page.locator(".action__submit").click();
    await expect(page.locator(".hero-primary")).toHaveText(" Thankyou for the order. ");
    const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
    console.log(orderId);
-
 });

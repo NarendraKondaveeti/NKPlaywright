@@ -102,3 +102,85 @@ npx playwright test --update-snapshots
 
 npx playwright test --trace=on
 # Captures traces for all tests (useful for debugging failures).
+
+21. What is a Playwright Inspector? And how to debug the playwright script
+npx playwright test - -debug nee use chesi debug chesthanam idi playwright script matrame debug cheyataniki use avuthundi
+Prethis step jaragataniki mude highlight chesi chupisthundi
+Kinda trace nee provide chesthundi ante prathi step lo em jarigindi anedi cheputhundi
+Alagee manaki Explore okka input field vutundi akkada manam locators nee validate cheyochu like inspect in the browsers or manam a Explore meda click chesi adena element meda click chesthe a element ki CSS selector nee isthundi
+22. Codegen tool to record & Playback with generated automation script
+npx playwright test codegen idi manaki code recorde chesi isthundi
+23. Detailed view of Test Traces, HTML reports, logs & Screenshots for test results
+HTML, Trace reports nee generate cheyali ante daniki separate gaa code me rayalisina avasaram ledu playwright.config,js file avi config chesthe chalu
+Options for tracing are:-
+on: Record trace for each test
+off: Do not record trace. (default)
+retain-on-failure: Record trace for each test, but remove all traces from successful test runs.
+
+Link:-  Trace.playwright.dev
+
+Command for trace report:- playwright show-trace trace.zip
+
+Screenshot Options:-
+on
+only-on-failure
+Off
+
+HTML Reports playwright-report folder lo vuntai, HTML report playwright-report folder lo vutundi, e playwright-report folder lo trace, data ani two folder vunai data folder lo each test cases ki okka zip folder create avuthundi with GUID ID name tho, trace folder lo koni Javascript, CSS, HTML, SVG file create avuthunai manaki ivi antha avasarma ledu
+Traces and Screenshot test-results folder vunai, test-results folder lo each test cases ki okka separate folder create avuthundi with test case name a folder kinda trace.zip file generate avuthundi a file nee Trace.playwright.dev lo import chesukoni logs check chesukovochu, idulo before action, After Action, During Action with screenshots and logs vunai
+
+/* npx playwright test --ui  idi okka test execution command idi run chesthe execution start avakundaa playwright okka UI tool nee open chesthundi
+adulo project lo vunna ani files vuntai alage adena file mutiple cases vunte each case ki run button chupisthundi, manam kavali ante ani test files nee okka sari execute cheyosu 
+or okka file nee run chesukovochu, or file lo single or mutiple cases nee run chesukovochu id manaki Terminal lo test results em ivadu
+test execution complete ayyakaa ani a tool nee vunai logs, screenshots alaa anni
+and alage a tool open chesi aden test run chesi malli update chesi save chesthe a tool automatically execution start chesthundi
+*/
+
+API testing valla web automation tests ela easy avuthayi:
+Execution Time Thaggadam: Web automation test execution time thaggadaniki API testing help chesthundi.
+Stability Penchadam: API ni web automation test lo integrate chesi robust test cases build cheyyachu, idhi test ni inka stable chesthundi.
+Smarter Approach: Present days lo smart methods use cheyadaniki chala mandi try chesthunaru. API integration is one of the smarter approaches.
+Application Backend: Ippudu chala applications backend API calls mida run avuthayi. API backend nunchi data ni receive chesi, frontend lo render chesthundi.
+API Call Example: Oka web application lo login example tho, API call yela work chesthundi, authentication yela jarugutundi ane chepparu.
+Session Token: API response lo session token ni generate chesi, adi local storage lo store chesthundi, ade token valla manam logged-in state lo untam.
+Cookies and Session Storage: Ippudu session cookies and tokens valla browser lo login state maintain chesthundhi.
+API Testing with Playwright: Next lecture lo, Playwright use chesi API calls ni yela perform cheyyalo, token ni yela session storage lo set cheyyalo chepparu.
+
+44. Place order API to create order and bypass the flow in UI with mix of web/API
+Firstly:
+Login ni Skipp Cheyyadam: Ikkada manam login chesi token ni ela use chesukoni, login ni ela skipp cheyalo choosamu.
+Token Storage: Token ni localStorage, cookies, leda sessionStorage lo store chesukovachu. Developer tho adigi, session information ekkada store chesaru ani telusukovali.
+Course ki Relevant Points:
+Precondition Setup:
+Order Creation: Order history page ni verify cheyali ante, munduga order create chesukovali. API use chesi order create cheyadam vallaa, all steps like cart add, checkout etc., skip cheyyachu.
+API Usage: API call to order create cheyadam valla steps fast ga complete avutayi. API use chesi order create chesi, history page lo check cheyachu.
+Authorization Token:
+Token Integration: Order API call ki token authentication kavalani, Authorization header lo token pass cheyyali. Token login response nundi pondali.
+API Efficiency:
+Speed: API testing fast ga untundi (2 seconds) compared to browser testing (8-10 seconds). API use chesi test data create cheyadam valla time and effort save cheyyachu.
+Practical Steps:
+Verify Order: Order history page lo order verify cheyali ante, munduga API use chesi order create chesi, token to authenticate cheyali.
+Next Steps:
+Next lecture lo, order create cheyadaniki step-by-step process chuddam.
+Conclusion:
+API testing and automation lo API calls valla efficiency penchachu, unnecessary steps ni skip cheyyachu.
+
+
+Excel Integration with JavaScript:-
+Excel data ni read, write, and modify cheyadam ki ExcelJS ane npm package use cheyyali.
+ExcelJS ni project lo use cheyadaniki mundu npm install exceljs command run cheyyali.
+Ippudu mī project lo Excel ni handle cheyadaniki ExcelJS ni use chesi code rasukoachu.
+Node Project Setup:-
+First, okka node project create chesi npm init command tho package.json file generate cheyyali.
+npm install exceljs command to ExcelJS plugin ni project lo add cheyyali.
+Project ni verevallu use cheyali ante package.json lo dependencies clear ga mention cheyadam mukhyam.
+package.json Explanation:-
+Dependencies: Run-time lo avasaram ayye packages ikkada mention chestharu.
+DevDependencies: Development time lo matrame use avvaye packages ikkada mention chestharu.
+Scripts: Project-related tasks ni automate cheyadaniki custom commands ikkada define chestharu.
+Sharing Project:-
+package.json lo dependencies list vunte, project ni share chesaka verevallu npm install run chesthe, avi automatic ga install avuthayi.
+Adena folder nee create cheyataniki:- mkdir <FolderName> ani command prompt lo manam run chesthe folder create avuthundi
+Alage npm init command run chesi package.json file create cheyyachu aithe npm init command ni run cheyali ante, mana laptop lo Node.js install chesi undadam mandatory
+Node.js install chesina tarvata, npm (Node Package Manager) ane tool kuda automatic ga install avuthundi.
+

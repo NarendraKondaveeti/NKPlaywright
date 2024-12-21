@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
 // const username = page.locator("#username") ikkaa ivakudadu
-test('Locators Test', async ({ page }) =>{
+test.only('Locators Test', async ({ page }) =>{
     test.slow();
     const username = page.locator("#username")  
     // ikkada manam "await" em mention cheyalisina avasaram ledu aduku ante ikkada manam just value nee variable store chesthunam ante but action em cheytamaledu (ante fill values, click on element)
     // ikkada locator nee okka variable lo store chesukoni a varaible nee reuse chesukutam a locator ki bodulu
     const password = page.locator("[type='password']") 
-    // e variable declaration manam test function lone cheyali adukun ante test function bhayata manam page object nee use cheyaledu so manaki "page is not definedplaywright" issue vosthundi
+    // e variable declaration manam test function lone cheyali adukun ante test function bhayata manam page object nee use cheyaledu so manaki "page is not defined playwright" issue vosthundi
     const loginButton = page.locator("#signInBtn")
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/'); 
     await username.fill('rahulshetty');  // ikkada manam username ane input field lo okka value nee fill chestham (ex:-rahulshetty)
@@ -20,7 +20,6 @@ test('Locators Test', async ({ page }) =>{
     console.log(await page.locator(".card-body a").nth(1).textContent()) // ikkada manaki e element kavale playwright ki index value tho cheputhunam (1 index ante 2nd element ani ardam)
     //second() method Playwright lo available ledu. "nth(1)"" method ni use chesukondi
 });
-
 
 /* idi Hard code aduku ante ikkada same loactor nee malli ekkadana use cheyani ante malli a locator antha ravali and 
 future appudena a locator change aithe a ani places lo update cheyali aduke paina locators nee okka variable lo store chesi a variable nee use chesthunama 

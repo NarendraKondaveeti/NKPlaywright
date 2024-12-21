@@ -28,6 +28,10 @@ test('@Web Client App login', async ({ page }) => {
 
    await page.waitForLoadState('networkidle'); 
    // Page load ayyye varaku wait chestundi, network lo yavva request ledhu ani state lo untundi.
+   // ikkada network calls ani load aye varuku page nee wait lo vuchuthunam waitForLoadState("") ane method lo "networkidle" ane Arguments ichi
+   //await page.locator(".card-body b").first().waitFor(); // ikkadaa only waitFor() method nee use chesthe okka elemente vunte a element nee return chesthundi but mutiple elements vunnappudu a element nee retun cheyale theliyakka error nee isthund
+   //aduke ade okka element(ex:-first) load aye varuku wait cheyamani cheputhunam
+   // ivi kadu inka chala methods vunnai locators identify aye varuku wait cheyataniki
 
    const titles = await page.locator(".card-body b").allTextContents();
    // ".card-body b" class unna elements nundi anni text contents ni allTextContents() method use chesi collect chestundi.
