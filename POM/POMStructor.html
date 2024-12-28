@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Framework Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .node {
+            background-color: #ffffff;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: auto;
+        }
+        .node::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background-color: #4caf50;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .node:last-child::after {
+            display: none;
+        }
+        .sub-node {
+            margin-left: 40px;
+            border-left: 2px solid #4caf50;
+            padding-left: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Automation Framework Structure</h1>
+
+        <div class="node">
+            <strong>project_name</strong>
+            <div class="sub-node">
+                <div class="node">
+                    <strong>/data</strong><br>
+                    Stores test data (e.g., user credentials, URLs)<br>
+                    <em>Example:</em> test_data.json: {"username": "test_user", "password": "securePass123"}
+                </div>
+                <div class="node">
+                    <strong>/features</strong><br>
+                    Contains Gherkin feature files describing application behavior
+                    <div class="sub-node">
+                        <div class="node">
+                            <strong>login.feature</strong><br>
+                            Scenario: Validate user login functionality
+                        </div>
+                        <div class="node">
+                            <strong>/steps</strong><br>
+                            Maps Gherkin steps to Python code
+                            <div class="sub-node">
+                                <div class="node">
+                                    <strong>login_steps.py</strong><br>
+                                    Implements steps for "Given", "When", "Then"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="node">
+                    <strong>/utilities</strong><br>
+                    Reusable modules (e.g., logging, database helpers)
+                    <div class="sub-node">
+                        <div class="node">
+                            <strong>logger.py</strong><br>
+                            Provides centralized logging for debugging
+                        </div>
+                        <div class="node">
+                            <strong>db_helper.py</strong><br>
+                            Handles CRUD operations on the database
+                        </div>
+                    </div>
+                </div>
+                <div class="node">
+                    <strong>/reports</strong><br>
+                    Stores test execution reports
+                    <div class="sub-node">
+                        <div class="node">
+                            <strong>report.html</strong><br>
+                            HTML report summarizing test outcomes
+                        </div>
+                    </div>
+                </div>
+                <div class="node">
+                    <strong>environment.py</strong><br>
+                    Configures setup/teardown (e.g., browser, DB)
+                </div>
+                <div class="node">
+                    <strong>behave.ini</strong><br>
+                    Runtime settings (e.g., browser type, test tags)
+                </div>
+                <div class="node">
+                    <strong>requirements.txt</strong><br>
+                    Specifies project dependencies (e.g., Selenium, Behave)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

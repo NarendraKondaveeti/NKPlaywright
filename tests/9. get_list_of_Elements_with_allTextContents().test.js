@@ -15,12 +15,22 @@ test('Locators Test', async ({ page }) =>{
     await page.waitForSelector('.card-body a');
     //await page.waitForTimeout(4000);
     console.log(await cardTitle.allTextContents(".card-body a")) 
-    /* allTextContents() method DOM lo locator immediately available unnappudu a locator ni find chesi, text contents ni return chesthundi. Kani, locator availability lekunda unte, method wait cheyakunda(like textContext, fill,...), immediately empty array [] return chesthundi
-    anduku ante allTextContents use chesinappudu playwright first empty array create cheesthundi tarvata element find aithe appudu values nee a empty array lo insert chesthundi
-    daniki manam "await page.waitForTimeout(4000)" rasthe page 4seconds waiting lo vutundi e lopu allTextContents() method loactor nee find chesi values nee array lo insert chesthundi
-    aithe manam ikkada "await page.waitForTimeout(4000)" rayali ani em ledu dani kante better gaa "await page.waitForSelector('.card-body a');" or "console.log(await cardTitle.first().textContent())" nee use cheyochu
-    vitiki alagu a element kosam wait chesthe mechanism vundi kabatti a element load ayya varuku page nee waiting lo vuchuthai inka ellagu DOM lo locator available lo vundi kabatti allTextContents() method elements nee get chesthukuntundi
-    ikkada "await page.waitForTimeout(4000)" hard code avuthundi aduku ante element 2000 lope load aithe 4000 varuku wait chesthundi danikante "waitForSelector()" or "textContent()" nee use cheyatam bettert
+    /* allTextContents() method DOM lo locator immediately available unnappudu a locator ni find chesi,
+    text contents ni return chesthundi. Kani, locator availability lekunda unte, method wait 
+    cheyakunda(like textContext, fill,...), immediately empty array [] return chesthundi
+    anduku ante allTextContents use chesinappudu playwright first empty array create cheesthundi 
+    tarvata element find aithe appudu values nee a empty array lo insert chesthundi
+    daniki manam "await page.waitForTimeout(4000)" rasthe page 4seconds waiting lo vutundi 
+    e lopu allTextContents() method loactor nee find chesi values nee array lo insert chesthundi
+    aithe manam ikkada "await page.waitForTimeout(4000)" rayali ani em ledu dani kante better gaa 
+    "await page.waitForSelector('.card-body a');" or 
+    "console.log(await cardTitle.first().textContent())" nee use cheyochu
+    vitiki alagu a element kosam wait chesthe mechanism vundi kabatti a element load ayya varuku 
+    page nee waiting lo vuchuthai inka ellagu DOM lo locator available lo vundi kabatti 
+    allTextContents() method elements nee get chesthukuntundi
+    ikkada "await page.waitForTimeout(4000)" hard code avuthundi aduku ante element 2000 
+    lope load aithe 4000 varuku wait chesthundi danikante "waitForSelector()" or "textContent()" 
+    nee use cheyatam bettert
     */
 });
 
@@ -29,7 +39,8 @@ Explanation:-
 
 1.Import:- 
 `@playwright/test` nunchi `test` and `expect` functions ni import chesukutunam.
-`test` function ni use chesi test cases ni define chesthunam and `expect` function ni use chesi assertions chesukovachu.
+`test` function ni use chesi test cases ni define chesthunam and `expect` function ni use chesi 
+assertions chesukovachu.
 
 2.Test Definition:-
 `test('Locators Test', async ({ page }) => {...});` line to test case ni define chesthunam.

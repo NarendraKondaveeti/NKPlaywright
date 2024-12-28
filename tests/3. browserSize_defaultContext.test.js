@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 // Needed when specific configurations or multiple contexts are required.
-test('@test2 Test Cases Name',  async ({browser})=> {// here browser is fixture and that extract from @playwright/test module the test can understand the browser fixture without import
+test('@test2 Test Cases Name',  async ({browser})=> {
+    // here browser is fixture and that extract from @playwright/test module 
+    // the test can understand the browser fixture without import
     // const context = await browser.newContext(); 
     const context = await browser.newContext({
         viewport: { width: 1200, height: 720 }

@@ -5,8 +5,13 @@ import { test, expect } from '@playwright/test'; // ikkada @playwright/test aned
 test('@test Test Cases Name',  async function({page}) {
     await page.goto('https://playwright.dev/');
 });
+
+test('Test Cases Name', async ({ page }) => {  
+    await page.goto('https://playwright.dev/');
+});
+
 /*
-test('Test Cases Name', async ({ page }) =>) { // For anonymous functions, you can skip the function keyword and use the => syntax instead.
+test('Test Cases Name', async ({ page }) => { // For anonymous functions, you can skip the function keyword and use the => syntax instead.
     await page.goto('https://playwright.dev/');
 });
 */

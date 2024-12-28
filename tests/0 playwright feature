@@ -1,0 +1,101 @@
+/* We need this import first to write the test script in the test framework 
+@paywright: */
+import { test, expect } from '@playwright/test';
+
+/* Just the basic syntax to open the browser and a web page using Playwright's in-built "page" object. 
+Page: It will open a new context (a browser) and open a web page. 
+But if you want to customize (like browser window size or browser version) the context, 
+it is not possible with the page object directly. */
+test('Test Case Name', async function({ page }) {
+    await page.goto('https://playwright.dev/');
+});
+
+/* If you want to customize the context (browser), we need to create a context using `browser.newContext()`. 
+While creating, we can customize the context, 
+like viewport (browser open size), userAgent (browser version).
+Then, we can create one or more pages using that context, 
+like `const page = await context.newPage();`. 
+browser: This is a Playwright in-built feature provided by the test package.
+newContext(): This is a Playwright in-built feature accessed from the browser object.
+newPage(): This is also a Playwright in-built feature accessed from the context object. */
+test('Test Case Name', async ({ browser }) => {
+    const context = await browser.newContext({
+        viewport: { width: 180, height: 720 },
+        userAgent: 'MyUserAgent'
+    });
+    const page = await context.newPage();
+    await page.goto('https://playwright.dev/');
+});
+
+/* Get the web page (tab) title, store it in a variable, and print it in the console */
+const title = await page.title();
+console.log(title);
+
+/* Write an assertion for the page title (compare the page title with our expected value) */
+await expect(page).toHaveTitle("Google");
+
+/* In the input fields, fill the value using the fill("value") function or method */
+await page.locator("locator value").fill("rahulshetty");
+
+/* To execute only specific test cases, use `.only`. If you want to skip the execution of a test case, use `.skip`. */
+test.only("Case Title", async ({ page }) => {
+    // Test script here
+});
+test.skip("Case Title", async ({ page }) => {
+    // Test script here
+});
+
+/* To get the value from the given locator, use textContent() Playwright function */
+const text = await page.locator("locator value").textContent();
+console.log(text);
+
+/* Use the assertion toContainText("expected value") to check if the given locator 
+contains the expected value 
+await: We use await before expect() because expect() is asynchronous. 
+When performing assertions, we are waiting for the page (browser) to confirm the expected behavior. 
+Until the assertion is complete, Playwright pauses the execution of further commands
+on the page to ensure proper verification*/
+await expect(page.locator("locator value")).toContainText("expected value");
+
+/* Here, we are specifying which element we need by using first() or nth(0). 
+The 0 index refers to the first element in the list of matched elements.*/
+await page.locator("locator value").first().textContent() 
+await page.locator("locator value").nth(0).textContent()  
+
+/*Use allTextContents() when you need to retrieve text from multiple elements at once.
+The method returns an array of text content,
+which can be useful when dealing with a list of items or multiple matching elements. */
+await page.locator("locator value").allTextContents()
+
+/* What: It waits for an element that matches the given locator to appear in the DOM 
+(Document Object Model).
+Why: This is useful when you need to wait for an element to load or become visible before 
+interacting with it.
+Purpose: To ensure the element is present and ready for further actions, like clicking or typing.*/
+await page.waitForSelector('locator value');
+
+/*What: This waits for the page to reach a state where there are no network connections for at least 
+500 milliseconds. It indicates that the page has finished loading.
+Why: It's useful when you need to ensure that all network requests 
+(like images, scripts, API calls) are completed before performing further actions.
+Purpose: To wait for the page to be fully loaded and stable, ensuring all resources are loaded. */
+await page.waitForLoadState('networkidle'); 
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+

@@ -3,7 +3,8 @@ import { test, expect } from '@playwright/test';
 test.only('Locators Test', async ({ page }) =>{
     test.slow();
     const username = page.locator("#username")  
-    // ikkada manam "await" em mention cheyalisina avasaram ledu aduku ante ikkada manam just value nee variable store chesthunam ante but action em cheytamaledu (ante fill values, click on element)
+    // ikkada manam "await" em mention cheyalisina avasaram ledu aduku ante 
+    // ikkada manam just value nee variable store chesthunam ante but action em cheytamaledu (ante fill values, click on element)
     // ikkada locator nee okka variable lo store chesukoni a varaible nee reuse chesukutam a locator ki bodulu
     const password = page.locator("[type='password']") 
     // e variable declaration manam test function lone cheyali adukun ante test function bhayata manam page object nee use cheyaledu so manaki "page is not defined playwright" issue vosthundi
@@ -21,8 +22,10 @@ test.only('Locators Test', async ({ page }) =>{
     //second() method Playwright lo available ledu. "nth(1)"" method ni use chesukondi
 });
 
-/* idi Hard code aduku ante ikkada same loactor nee malli ekkadana use cheyani ante malli a locator antha ravali and 
-future appudena a locator change aithe a ani places lo update cheyali aduke paina locators nee okka variable lo store chesi a variable nee use chesthunama 
+/* idi Hard code aduku ante ikkada same loactor nee malli ekkadana use cheyani ante malli 
+a locator antha ravali and 
+future appudena a locator change aithe a ani places lo update cheyali aduke paina 
+locators nee okka variable lo store chesi a variable nee use chesthunama 
 appudu loactor emina change aina a okka variable place lo change chesthe saripothundi
 
 test('Locators Test', async ({ page }) =>{ 

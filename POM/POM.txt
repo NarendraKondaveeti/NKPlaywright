@@ -1,0 +1,79 @@
+E structure lo folders, files, and purpose gurinchi detail ga chepthanu, ekkada emi vuntayi ante:
+
+
+
+ 1. /data
+   - Purpose: Test data ni store cheyyadaniki use chestaru.
+   - Examples: User credentials, test inputs (e.g., usernames, passwords, URLs), and other reusable test data files.
+   - Real-Time Use: 
+     - Example: `data/user_credentials.json` lo usernames and passwords vuntayi.
+
+
+
+ 2. /features
+   - Main Purpose: Behavior Driven Development (BDD) framework ki core folder idi.
+   - Subfolders:
+     - /pages: 
+       - Store page objects (Page Object Model - POM). Each web page ki corresponding Python class lo locators (selectors) and actions (methods) vuntayi.
+       - Example: `LoginPage.py` lo username locator, password locator, and login button locator vuntayi.
+     - /regression_suite, /smoke_suite, and /ui_suite:
+       - Feature files classify chesi suites ga organize chestaru.
+       - Example: `login.feature` regression lo vundi, UI suite lo undachu.
+     - /steps:
+       - Step definitions ki folder. Feature file lo unna Gherkin steps ni Python code tho map chestaru.
+       - Example: `When user clicks on login button` step ki corresponding Python function ikkada untundi.
+
+   - Files:
+     - data_config_file.json:
+       - Test-specific configurations (e.g., base URL, test environment details).
+     - environment.py:
+       - Test setup/mukhyamaina environment configurations (e.g., browser initialization, teardown).
+
+
+
+ 3. /reports
+   - Purpose: Automation test execution taruvata reports ni capture cheyyadam.
+   - Examples: HTML or JSON reports (pass/fail summary with screenshots).
+   - Real-Time Use:
+     - Example: `reports/test_run_2024_12_22.html` lo execution report untadi.
+
+
+
+ 4. /utilities
+   - Main Purpose: Reusable helper modules ni organize cheyyadam.
+   - Subfolders:
+     - /api: REST API calls ni handle cheyyataniki utilities (e.g., POST, GET).
+     - /db: Database queries ni execute cheyyataniki helpers.
+     - /helpers: General helpers (e.g., dropdown selections, browser actions).
+     - /util: Small utilities (e.g., string manipulation, date formatting).
+     - /logger: Log files generate cheyyataniki functionalities (e.g., error/debug logs).
+
+
+
+ 5. Root-Level Files
+   - .gitignore:
+     - Unnecessary files (.pyc, sensitive data) ni Git repository lo exclude cheyyadam.
+   - behave.ini:
+     - Runtime settings store chestadi (e.g., browser, execution type).
+   - README.md:
+     - Project ki introduction and usage details.
+   - requirements.txt:
+     - Python project ki dependencies list.
+
+
+
+ Test Execution Flow:
+1. Data Preparation: `/data` folder lo required test data untadi.
+2. Feature Files: `/features` lo scenarios (e.g., `login.feature`) mention chestaru.
+3. Step Definitions: `/features/steps` lo Gherkin scenarios ki implementation code untadi.
+4. Execution Configuration:
+   - `behave.ini` lo browser, test environment ni define chestaru.
+5. Test Reports: `/reports` folder lo automation results generate avuthayi.
+
+
+
+ Example Flow: Login Test
+1. `/data/user_credentials.json` lo `{"username": "test_user", "password": "test_pass"}` data untadi.
+2. `/features/pages/LoginPage.py` lo login locators and actions define chestaru.
+3. `/features/steps/login_steps.py` lo Gherkin steps ni Python methods ki map chestaru.
+4. Execution taruvata, `reports/test_report.html` lo results untayi.
