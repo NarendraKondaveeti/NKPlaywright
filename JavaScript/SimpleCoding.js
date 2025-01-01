@@ -88,7 +88,7 @@ let number = parseInt(a);
 for(i=1; i<=20; i++){
     console.log(i, "*", a, "=", i*a);
 }
- */
+
 
 let myString = "Hello, World!";
 console.log(myString.length); 
@@ -108,3 +108,14 @@ var arr = [1, 2, 3]; arr.length = 5; console.log(arr);
 var a = null; var b; 
 console.log("a == b =", a == b); 
 console.log("a === b =",a === b); 
+
+*/
+let person = {firstName: "John"};
+console.log(typeof(person))
+
+let nktoday = new Date();
+console.log(nktoday)
+console.log(typeof(nktoday))
+
+let fruits = ["Apple", "Banana"];
+console.log(typeof(fruits))

@@ -18,11 +18,14 @@ test('Locators Test', async ({ page }) =>{
     expect(await agreecheckbox.isChecked()).toBeFalsy();
     /*
     Await ekkada action perfrom chesthundo akkada a action ki mudu rayali
-    "expect(await agreecheckbox.isChecked()).toBeFalsy();"" e line lo await expect lopala rasam adukunu ate isChecked() anedi action perform chesthundi 
+    "expect(await agreecheckbox.isChecked()).toBeFalsy();"" e line lo await expect lopala 
+    rasam adukunu ate isChecked() anedi action perform chesthundi 
     but toBeFalsy() action em perform cheyatam ledu just comparision chesthundi ante
-    ikkada web element meda action compelet ayyaka vochina value nee maa expected value tho comparison chesthunam 
+    ikkada web element meda action compelet ayyaka vochina value nee maa expected value 
+    tho comparison chesthunam 
     but ikkada e line "await expect(pickvalue.last()).toBeChecked();" 
-    web element tho interaction lo vunnappude check box checked or not ani check chesthunam aduke expect ki mudu await rasam
+    web element tho interaction lo vunnappude check box checked or not ani check chesthunam 
+    aduke expect ki mudu await rasam
     */
     
 });

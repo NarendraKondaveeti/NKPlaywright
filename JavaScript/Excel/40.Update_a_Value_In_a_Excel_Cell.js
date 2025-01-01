@@ -27,28 +27,30 @@ ReadExcel()
 In-Built Statements:
 
 async function ReadExcel()
-
 Idi JavaScript in-built feature, asynchronous functions ni define cheyatam ki use chestaru.
+
 const workbook = new ExcelJS.Workbook();
+Idi ExcelJS library yokka in-built method, oka new workbook instance ni create cheyatam ki 
+use chestaru.
 
-Idi ExcelJS library yokka in-built method, oka new workbook instance ni create cheyatam ki use chestaru.
 await workbook.xlsx.readFile('C://Practice//ExcelTest.xlsx');
-
 Idi ExcelJS lo in-built method, existing Excel file ni asynchronous ga read cheyatam ki use chestaru.
+
 const worksheet = workbook.getWorksheet('NK Sheet One');
-
 Idi ExcelJS lo in-built method, workbook lo oka specific sheet ni access cheyatam ki use chestaru.
+
 worksheet.eachRow((row, rowNumber) => { ... });
-
 Idi ExcelJS lo in-built method, worksheet lo prathi row ni iterate cheyatam ki use chestaru.
-row.eachCell((cell, colNumber) => { ... });
 
+row.eachCell((cell, colNumber) => { ... });
 Idi ExcelJS lo in-built method, prathi row lo unna prathi cell ni iterate cheyatam ki use chestaru.
+
 await workbook.xlsx.writeFile('C://Practice//ExcelTest.xlsx');
 
-Idi ExcelJS lo in-built method, modified workbook ni asynchronous ga file ga save cheyatam ki use chestaru.
-User-Defined Statements:
+Idi ExcelJS lo in-built method, modified workbook ni asynchronous ga file ga save cheyatam ki 
+use chestaru.
 
+User-Defined Statements:
 const celladdress = {row:-1, column:-1};
 
 Idi user-defined object, row and column numbers store cheyatam ki.
@@ -57,7 +59,8 @@ if(cell.value === "Python") { ... }
 Idi user-defined condition, cell value "Python" unna condition satisfy chestundi.
 celladdress.row = rowNumber; celladdress.column = colNumber;
 
-Idi user-defined assignment, cell yokka row and column numbers ni celladdress object lo store chestundi.
+Idi user-defined assignment, cell yokka row and column numbers ni celladdress object lo store 
+chestundi.
 const cell = worksheet.getCell(celladdress.row, celladdress.column);
 
 Idi user-defined statement, celladdress object lo store aina row and column values ni use chesi 
@@ -68,9 +71,11 @@ Idi user-defined statement, access chesina cell value ni modify cheyatam ki.
 Vati Use Anti:
 
 In-Built Statements:
-Idi predefined methods and features, specific tasks ni cheyatam ki library or language yokka functionalities use chestaru.
+Idi predefined methods and features, specific tasks ni cheyatam ki library or language yokka 
+functionalities use chestaru.
 User-Defined Statements:
-Idi developers create chesina code blocks, specific logic or data ni handle cheyatam ki user ga define chestaru
+Idi developers create chesina code blocks, specific logic or data ni handle cheyatam ki user ga 
+define chestaru
 */
 
 

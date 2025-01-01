@@ -1,0 +1,4 @@
+To define the variable use this var, let, const keyword in JavaScript but don't need to metion datatype
+
+To know the datatype 
+typeof(variable name)

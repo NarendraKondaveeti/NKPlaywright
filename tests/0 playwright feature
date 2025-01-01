@@ -81,21 +81,51 @@ Why: It's useful when you need to ensure that all network requests
 Purpose: To wait for the page to be fully loaded and stable, ensuring all resources are loaded. */
 await page.waitForLoadState('networkidle'); 
 
+/* Selects a dropdown option with the given value. */
+await page.locator("locator value").selectOption('option value')
+
+/* Clicks the last element matched by the locator. */
+await page.locator("locator value").last().click()
+
+/* Pauses the script execution and opens Playwright Inspector for debugging. */
+await page.pause()
+
+/* Purpose: Checks if the last element matching the locator is in the "checked" state 
+(e.g., a checkbox is selected or not).
+Return Value: Returns true if checked, otherwise false.*/
+await page.locator("locator value").last().isChecked()
+
+/* Use this in tests to verify if an element is checked 
+(e.g., validating user interaction with a checkbox) */
+await expect(page.locator("locator value").last()).toBeChecked();
+
+/* Purpose: Verifies that an element is not checked.
+Return Value: Fails the test if the element is checked. */
+expect(await page.locator("locator value").isChecked()).toBeFalsy();
+
+/* pressSequentially() methond :- idi manam ichina text nee input field lo enter chesi 
+   Enter press chesthundi 
+   appudu manaki manam pass chesina text matching items dropdown list display avuthai  */
+await page.locator("locator value").pressSequentially("value");
+
 /* */
 
 
-
 /* */
-
-
-
-/* */
-
 
 
 /* */
 
 
+/* */
+
 
 /* */
+
+
+/* */
+
+
+/* */
+
 

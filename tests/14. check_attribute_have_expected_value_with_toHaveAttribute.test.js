@@ -6,7 +6,8 @@ test('Locators Test', async ({ page }) =>{
     const pickvalue = page.locator('.radiotextsty'); 
     const pop_ok = page.locator('#okayBtn'); 
     const agreecheckbox = page.locator("#terms")
-    const documentLink = page.locator("[href*='documents-request']"); // CSS-selector "href" is Attribute, 
+    const documentLink = page.locator("[href*='documents-request']"); 
+    // CSS-selector "href" is Attribute, 
     //=======above store the locators in variables=========//
     await login(page);  
     await dropdown.selectOption('consult'); 
@@ -20,6 +21,7 @@ test('Locators Test', async ({ page }) =>{
     expect(await agreecheckbox.isChecked()).toBeFalsy();
     await expect(documentLink).toHaveAttribute("class", "blinkingText")
     /*
-    adena attribute manam expect chesthuna value vunado ledo check cheyataniki toHaveAttribute("type", "text") ane method nee use chestham
+    adena attribute manam expect chesthuna value vunado ledo check cheyataniki 
+    toHaveAttribute("type", "text") ane method nee use chestham
     */
 });

@@ -1,6 +1,7 @@
 /* 
 Ikkada, manam login API nundi token pondi, order create cheyyataniki API use chesam. Tarvata, 
-web page lo a order ni verify chesi, everything correct unda leda ani check chesam. Ikkada main advantage enti ante, 
+web page lo a order ni verify chesi, everything correct unda leda ani check chesam. 
+Ikkada main advantage enti ante, 
 API ni use chesi, test cases ni fast ga run cheyyadam and exact data ni verify cheyyadam.
 */
 

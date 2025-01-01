@@ -6,7 +6,8 @@ apiContext ane context create chesam using request.newContext().
 APIUtils instance ni create chesi, apiContext mariyu loginPayLoad ni pass chesam.
 Create Order and Get Response:
 
-apiutils.createOrder(orderPayLoad) ni call chesi, order creation chesi response ni response variable lo store chesam.
+apiutils.createOrder(orderPayLoad) ni call chesi, order creation chesi response ni response variable 
+lo store chesam.
 Token Storage in Local Storage:
 
 Test lo Token ni browser Local Storage lo store chesam using page.addInitScript.
@@ -16,7 +17,7 @@ orderId ni verify chestunnamu by comparing it with the order details on the page
 */
 
 import { test, expect, request } from '@playwright/test';
-import { APIUtils } from '../utils/APIUtils';
+import { APIUtils } from '.../utils/APIUtils';
 
 const loginPayLoad = {"userEmail":"anshika@gmail.com","userPassword":"Iamking@000"};
 const orderPayLoad = { orders: [{ country: "Cuba", productOrderedId: "6581ca979fd99c85e8ee7faf" }] };

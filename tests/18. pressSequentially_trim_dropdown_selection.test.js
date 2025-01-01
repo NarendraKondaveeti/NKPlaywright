@@ -33,7 +33,8 @@ test('@Web Client App login', async ({ page }) => {
    await page.locator("text=Checkout").click();
    await page.pause();
    /*
-   pressSequentially() methond :- idi manam ichina text nee input field lo enter chesi Enter press chesthundi 
+   pressSequentially() methond :- idi manam ichina text nee input field lo enter chesi 
+   Enter press chesthundi 
    appudu manaki manam pass chesina text matching items dropdown list display avuthai
    */
    await page.locator("[placeholder*='Country']").pressSequentially("ind");

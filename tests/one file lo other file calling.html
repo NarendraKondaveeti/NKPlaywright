@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Playwright Execution Flow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .box {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            margin: 20px;
+            width: 200px;
+            background-color: #f9f9f9;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 20px;
+            color: #555;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .vertical {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Playwright Execution Flow</h2>
+    <div class="container">
+        <div class="box">
+            <strong>Main Test File</strong><br>
+            Call `await login(page)`
+        </div>
+        <div class="arrow">➜</div>
+        <div class="box">
+            <strong>Transition to login.js</strong><br>
+            Enter `login` Function<br>
+            - Navigate to login page<br>
+            - Fill username<br>
+            - Fill password
+        </div>
+        <div class="arrow">➜</div>
+        <div class="box">
+            <strong>Back to Main Test File</strong><br>
+            Resume Execution<br>
+            e.g., `dropdown.selectOption()`
+        </div>
+    </div>
+</body>
+</html>
